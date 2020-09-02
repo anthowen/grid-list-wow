@@ -33,6 +33,11 @@ export class GridTileModel implements GridTile {
     this.status = status;
   }
 
+  setSize(w: number, h: number): void {
+    this.cols = w;
+    this.rows = h;
+  }
+
   setXPosition(x: number): GridTileModel {
     this.left = x;
     return this;
