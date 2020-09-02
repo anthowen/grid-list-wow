@@ -1,6 +1,6 @@
-import { GridTileModel } from './../../model/grid-tile.model';
-import { GridTile } from './../../model/grid-tile.interface';
 import { Component, OnInit, EventEmitter, Input, Output } from '@angular/core';
+import { GridTileModel } from 'src/app/models/grid-tile.model';
+import { GridTile } from 'src/app/models/grid-tile.interface';
 
 @Component({
   selector: 'app-grid-tile',

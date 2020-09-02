@@ -1,4 +1,4 @@
-import { GridSetting } from './../../model/grid-setting.interface';
+import { GridSetting } from './../../models/grid-setting.interface';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {FormControl, Validators, FormBuilder, FormGroup} from '@angular/forms';
 import { Store } from '@ngrx/store';
@@ -52,7 +52,6 @@ export class GridListSettingComponent implements OnInit, OnDestroy {
   }
 
   submitForm($event: any, formData: any): void {
-    console.log('data', formData);
     if (this.settingForm.valid) {
 
       this.store.dispatch(GridListActions.generateLists({

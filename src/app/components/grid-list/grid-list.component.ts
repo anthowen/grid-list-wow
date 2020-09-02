@@ -1,6 +1,6 @@
-import { GridSetting } from './../../model/grid-setting.interface';
-import { GridTileModel } from './../../model/grid-tile.model';
-import { TileStatus, GridTile } from './../../model/grid-tile.interface';
+import { GridSetting } from './../../models/grid-setting.interface';
+import { GridTileModel } from './../../models/grid-tile.model';
+import { TileStatus, GridTile } from './../../models/grid-tile.interface';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { Store } from '@ngrx/store';
