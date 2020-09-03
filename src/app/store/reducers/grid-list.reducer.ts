@@ -1,9 +1,10 @@
 import { Action, createSelector, createReducer } from '@ngrx/store';
 import { mutableOn } from 'ngrx-etc';
-import { GridListState } from './../state/grid-list.state';
-import * as GridListActions from '../actions/grid-list.actions';
-import { TileStatus } from './../../model/grid-tile.interface';
-import { initialState } from '../state/grid-list.state';
+
+import { GridListState } from 'src/app/store/state/grid-list.state';
+import * as GridListActions from 'src/app/store/actions/grid-list.actions';
+import { TileStatus } from 'src/app/models/grid-tile.interface';
+import { initialState } from 'src/app/store/state/grid-list.state';
 import { AppState } from '.';
 import { generateList, expandSelection, shrinkSelection, mergeSelectedTiles} from './grid-list.utils';
 

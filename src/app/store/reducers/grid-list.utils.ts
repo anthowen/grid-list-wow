@@ -1,7 +1,7 @@
-import { GridListState, Rect } from './../state/grid-list.state';
-import { GridSetting } from '../../model/grid-setting.interface';
-import { GridTileModel } from '../../model/grid-tile.model';
-import { TileStatus } from '../../model/grid-tile.interface';
+import { GridListState, Rect } from 'src/app/store/state/grid-list.state';
+import { GridSetting } from 'src/app/models/grid-setting.interface';
+import { GridTileModel } from 'src/app/models/grid-tile.model';
+import { TileStatus } from 'src/app/models/grid-tile.interface';
 
 /**
  * Generate tile list under the settings given
@@ -20,8 +20,8 @@ export const generateList = (setting: GridSetting) => {
         text: `Tile (${i}, ${j})`,
         status: TileStatus.DEFAULT,
       })
-      .setXPosition(i)
-      .setYPosition(j);
+      .setXPosition(j)
+      .setYPosition(i);
 
       tiles.push(newTile);
     }
@@ -165,10 +165,8 @@ export const mergeSelectedTiles = (state: GridListState) => {
   // Don't remove the first tile
   selectedTileIds.shift();
 
-  console.log(state.tiles[selectedTiles[0]], selectedTiles[0]);
-
   // Update first item's cols and rows
-  state.tiles[selectedTiles[0]].setSize(selectedRect.h, selectedRect.w);
+  state.tiles[selectedTiles[0]].setSize(selectedRect.w, selectedRect.h);
   state.tiles[selectedTiles[0]].setTileStatus(TileStatus.DEFAULT);
 
   // Remove others from the original list

@@ -1,5 +1,5 @@
-import { GridSetting } from './../../model/grid-setting.interface';
-import { GridTileModel } from './../../model/grid-tile.model';
+import { GridSetting } from 'src/app/models/grid-setting.interface';
+import { GridTileModel } from 'src/app/models/grid-tile.model';
 
 export interface Rect {
   x: number;

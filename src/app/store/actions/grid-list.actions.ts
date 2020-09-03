@@ -1,5 +1,5 @@
-import { GridSetting } from './../../model/grid-setting.interface';
 import { createAction, props } from '@ngrx/store';
+import { GridSetting } from 'src/app/models/grid-setting.interface';
 
 export const generateLists = createAction(
   '[GridList] Generate GridLists',
@@ -24,10 +24,3 @@ export const setMergePossible = createAction(
   '[GridList] Set isMergePossible',
   props<{isPossible: boolean}>(),
 );
-
-
-
-
-
-
-
