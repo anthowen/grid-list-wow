@@ -1,27 +1,30 @@
-# DoWow
+# Mergeable Grid list
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+The tool helps users to merge any adjacent tiles in a grid list so that they can create customized views as they want. Once they customize the view, they can place whatever the content they would like, like images, videos, and livestreams into each tile. That experience is just WOW.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Live at https://ng-grid-list.netlify.app/
 
-## Code scaffolding
+## Tech stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 10
 
-## Build
+- NgRx
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+- Angular Material
 
-## Running unit tests
+## How to use
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+The functionality is pretty much similar to `merge` in `Excel`.
 
-## Running end-to-end tests
+1. Generate a grid list using `Generate` button from the toolbar
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+2. Select adjacent cells holding on `ctrl` key
 
-## Further help
+3. Once `Merge` button is enabled, merge selected cells
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+4. Keep merging cells until you find a good-looking view
+
+## Screenshots
+
+
