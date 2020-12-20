@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/0edc416e-7e09-46b9-b9b1-9f3c50d92604/deploy-status)](https://app.netlify.com/sites/ng-grid-list/deploys)
+
 # Mergeable Grid list
 
 The tool helps users to merge any adjacent tiles in a grid list so that they can create customized views as they want. Once they customize the view, they can place whatever the content they would like, like images, videos, and livestreams into each tile. That experience is just WOW.
@@ -23,11 +25,11 @@ The functionality is pretty much similar to `merge` in `Excel`.
 2. Select adjacent cells holding on `meta` key
 
   _(Note: On Macintosh keyboards, this key is the command key (⌘). On Windows keyboards, this key is the Windows key (⊞))_
-
+  
   https://github.com/anthowen/mergeable-grid-list/blob/master/FireShot%20Capture%20067%20-%20DoWow%20-%20ng-grid-list.netlify.app.png
 
 3. Once `Merge` button is enabled, merge selected cells
 
 4. Keep merging cells until you find a good-looking view
-
+  
   https://github.com/anthowen/mergeable-grid-list/blob/master/FireShot%20Capture%20061%20-%20DoWow%20-%20ng-grid-list.netlify.app.png
