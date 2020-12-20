@@ -58,7 +58,7 @@ export class GridListComponent implements OnInit, OnDestroy {
   }
 
   onTileClicked(tile: GridTileModel, event: MouseEvent): void {
-    if (event.ctrlKey) {
+    if (event.metaKey) {
       this.store.dispatch(tile.status === TileStatus.SELECTED ?
         GridListActions.deselectTile({ id: tile.id})
         :
